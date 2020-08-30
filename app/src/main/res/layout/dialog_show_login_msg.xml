@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_large50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:text="Authentication Required"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size19" />
+
+            <ImageButton
+                android:id="@+id/bt_close_dialog_show_login_msg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@drawable/ic_cancel_white_24dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:background="@drawable/login_img"-->
+    <!--        android:contentDescription="@string/hint_user_name" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_small5"
+        android:padding="@dimen/margin_small10"
+        android:text="@string/login_required_msg"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small20"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/dialog_button_upload_skip_btn"
+            style="@style/ButtonStyleFullRed_Curved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/margin_small20"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size16" />
+
+        <Button
+            android:id="@+id/dialog_button_login"
+            style="@style/ButtonStyleFullRed_Curved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_small20"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_size16" />
+    </LinearLayout>
+
+
+</LinearLayout>

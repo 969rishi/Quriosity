@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Quriosity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+
+
+
+    <string name="dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android User</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tab_text_1">CHATS</string>
+    <string name="tab_text_2">GROUPS</string>
+    <string name="tab_text_3">CONTACTS</string>
+    <string name="deleted_msg_txt">🚫 This message is deleted</string>
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="facebook_app_id">2286368428145518</string>
+    <string name="fb_login_protocol_scheme">fb2286368428145518</string>
+    <string name="title_activity_bottom_navigation">bottomNavigation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Slider Screen Strings -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">START</string>
+    <string name="title_slide1">Friendship</string>
+    <string name="desc_slide1">you can find a large number of people to build up friendship</string>
+    <string name="title_slide2">No Cost</string>
+    <string name="desc_slide2">uMe is completely FREE of cost, no subscription fees.</string>
+    <string name="title_slide3">Chatting</string>
+    <string name="desc_slide3">fully one to one personal chatting system</string>
+    <string name="title_slide4">Secure</string>
+    <string name="desc_slide4">uMe keeps your messages secure</string>
+    <string name="submit">Submit</string>
+    <string name="savedraft">Save Draft</string>
+    <string name="previous">Previous</string>
+    <string name="signup_terms">By clicking <b>Submit </b> you agree to our <b>Terms and Conditions</b></string>
+    <string name="sent_otp_msg">We have sent an otp code to your mobile number. Please wait while we are fetching otp.</string>
+    <string name="phone_verified_msg">Your mobile verification process completed. Please wait while we setup your account.</string>
+    <string name="enter_otp_msg">Please enter 6 digit verification code sent to your phone.</string>
+    <string name="verification_in_progress">Your mobile verification process is in progress. Please wait…</string>
+    <string name="cancel_phone_verification_warning">Are you sure you want to cancel the verification process?</string>
+    <string name="booking">Booking</string>
+    <string name="inbox">Inbox</string>
+    <string name="usprofile">User</string>
+    <string name="favourites">Favourites</string>
+    <string name="chat">Chats</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="personal">PERSONAL</string>
+    <string name="explore">EXPLORE</string>
+    <string name="publish">PUBLISH</string>
+    <string name="publish_smllCase">Publish</string>
+    <string name="community">COMMUNITY</string>
+    <string name="setting">Setting</string>
+    <string name="latest_blogs">Latest Blogs</string>
+    <string name="get_paid_to_travel">Get Paid To Travel</string>
+    <string name="travel_guieds">Travel Guides</string>
+    <string name="create_trips">Create Trip</string>
+    <string name="upload_photo_video">Upload Photo/Video</string>
+    <string name="ask_the_community">Ask the Community</string>
+    <string name="help">Help</string>
+    <string name="refer_and_earn"><![CDATA[Refer & Earn]]></string>
+    <string name="rate_us">Rate Us 5 star</string>
+    <string name="my_trips">My Trips</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="admin">ADMIN</string>
+    <string name="rup_symbol">₹ ₹ ₹ ₹ ₹</string>
+    <string name="searchhint">Search:</string>
+    <string name="searchlocation">Search Location</string>
+    <string name="getlocation">Use current location</string>
+    <string name="mysetlocation">Currently selected address: </string>
+    <string name="savedaddress">Saved Addresses</string>
+    <string name="addaddress">Add Address</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="remove">Remove</string>
+
+    <string name="permission_denied_explanation">Wedamor uses this permission to detect your current location and offer you services accordingly.
+    Are you sure you want to deny this permission?</string>
+    <string name="settings">Settings</string>
+    <string name="location_permission_denied">Location Permission Denied</string>
+    <string name="deny_location_permission">Deny</string>
+    <string name="retry_location_permission">Retry</string>
+    <string name="goto_setting_location">GO TO SETTINGS</string>
+    <string name="location_denied_after_message">It looks like you have turned off permissions required for this feature.
+     it can be enabled under Phone Settings > Apps > Wedamor > Permissions</string>
+
+    <string name="foget_mail_snt_msg1">Instructions on how to reset your password were sent to </string>
+    <string name="foget_mail_snt_msg2">An email with instruction to reset password has been sent to your email address. Please follow the instructions in the email to reset your password</string>
+    <string name="hint_user_name">User Name</string>
+    <string name="login_required_msg">You need to authenticate yourself to access this feature.</string>
+    <string name="articles">Articles</string>
+    <string name="action_share">share</string>
+
+    <!--    Image picker Strings-->
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="three_line_text">Mahendra Singh Dhoni, is an Indian international cricketer who captained the Indian national team in limited-overs formats from 2007 to 2016 and in Test cricket from 2008 to 2014. He is the only captain in the history of Cricket to win all ICC trophies.</string>
+
+</resources>

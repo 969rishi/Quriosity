@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--change only the package name if you have change the package name of app-->
+    <!--    <external-path name="external_files" path="."/>-->
+
+    <external-path
+        name="external_files"
+        path="." />
+
+
+    <external-path
+        name="my_images"
+        path="/storage/emulated/0/Quriosity_pictures" />
+
+
+    <external-path
+        name="external_storage_root"
+        path="/storage/emulated/0/Quriosity_saved_images/" />
+
+    <external-path
+        name="external_storage_root"
+        path="/storage/emulated/0/Quriosity_saved_videos/" />
+    <external-path
+        name="external_storage_root"
+        path="/storage/emulated/0/Quriosity_data" />
+
+</paths>

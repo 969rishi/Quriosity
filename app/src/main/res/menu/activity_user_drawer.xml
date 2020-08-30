@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/personal">
+        <menu>
+            <item
+                android:id="@+id/mytrip"
+                android:icon="@android:drawable/ic_menu_gallery"
+                android:title="@string/my_trips" />
+            <item
+                android:id="@+id/mybookings"
+                android:icon="@drawable/ic_booking"
+                android:title="@string/my_bookings" />
+        </menu>
+    </item>
+
+    <item android:title="@string/explore">
+        <menu>
+            <item
+                android:id="@+id/blogs_explore"
+                android:icon="@drawable/ic_nav_article"
+                android:title="@string/latest_blogs" />
+            <item
+                android:id="@+id/paid_travel"
+                android:icon="@drawable/ic_rupee_under_circle"
+                android:title="@string/get_paid_to_travel" />
+            <item
+                android:id="@+id/travel_guides"
+                android:icon="@drawable/ic_guide"
+                android:title="@string/travel_guieds" />
+        </menu>
+    </item>
+
+    <item android:title="@string/publish">
+        <menu>
+            <item
+                android:id="@+id/upload_photoviedo"
+                android:icon="@drawable/ic_rupee_under_circle"
+                android:title="@string/upload_photo_video" />
+            <item
+                android:id="@+id/create_trips"
+                android:icon="@drawable/ic_rupee_under_circle"
+                android:title="@string/create_trips" />
+        </menu>
+    </item>
+
+
+    <item android:title="@string/community">
+        <menu>
+            <item
+                android:id="@+id/ask_community"
+                android:icon="@drawable/ic_shout"
+                android:title="@string/ask_the_community" />
+            <item
+                android:id="@+id/help_me"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="@string/help" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/settingmenuitem"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/setting" />
+    <item
+        android:id="@+id/refernearn"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/refer_and_earn" />
+    <item
+        android:id="@+id/rateusonplaystore"
+        android:icon="@android:drawable/star_off"
+        android:title="@string/rate_us" />
+
+
+</menu>

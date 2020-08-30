@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:gravity="end">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actor_me_radius">
+
+        <TextView
+            android:id="@+id/actor_me_textview1001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:autoLink="web"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/margin_normal10"
+            android:paddingTop="@dimen/padding_small8"
+            android:paddingEnd="@dimen/margin_small1"
+            android:paddingBottom="@dimen/padding_small8"
+            android:text="@string/deleted_msg_txt"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/text_size16"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/time_textview1001"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+            android:paddingBottom="@dimen/margin_small3"
+            android:textColor="@color/grey_60"
+            android:textSize="11sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="@dimen/text_size22"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/padding_small2"
+            android:gravity="bottom|center"
+            android:paddingEnd="@dimen/padding_small2"
+            android:paddingBottom="@dimen/padding_small2">
+
+            <ImageView
+                android:id="@+id/single_tick_imgview"
+                android:layout_width="13dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_singlecheck"
+                android:backgroundTint="@color/grey_40"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/double_tick_imgview"
+                android:layout_width="@dimen/margin_small15"
+                android:layout_height="@dimen/margin_normal20"
+                android:background="@drawable/ic_doublecheck"
+                android:backgroundTint="@color/grey_40"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

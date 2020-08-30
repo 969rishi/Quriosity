@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <include
+        android:id="@+id/actor_other_msgbox_layout"
+        layout="@layout/actor_other_msg_layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/single_line_msgbox_layout"
+        layout="@layout/actor_me_msg_layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/actor_other_mimebox_layout"
+        layout="@layout/actor_other_mime_layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/single_line_mimebox_layout"
+        layout="@layout/actor_me_mime_layout"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
+</RelativeLayout>

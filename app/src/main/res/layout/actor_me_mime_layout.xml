@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:gravity="end">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actor_me_mime_radius">
+
+        <ImageView
+            android:id="@+id/actor_me_imageview1001"
+            android:layout_width="@dimen/margin_large200"
+            android:layout_height="@dimen/margin_large200"
+            android:layout_marginEnd="1dp"
+            android:paddingStart="@dimen/margin_small3"
+            android:paddingTop="@dimen/margin_small3"
+            android:paddingEnd="@dimen/margin_small3"
+            android:paddingBottom="@dimen/margin_small3"/>
+
+        <TextView
+            android:id="@+id/time_textview10011"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actor_me_imageview1001"
+            android:layout_toStartOf="@+id/tick_linearlayout"
+            android:gravity="bottom|center"
+            android:paddingStart="@dimen/margin_small1"
+            android:paddingEnd="@dimen/margin_small3"
+            android:paddingBottom="@dimen/margin_small3"
+            android:shadowDx="3"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:textColor="@color/grey_60"
+            android:textSize="11sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/tick_linearlayout"
+            android:layout_width="@dimen/text_size22"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actor_me_imageview1001"
+            android:layout_alignEnd="@+id/actor_me_imageview1001"
+            android:layout_marginEnd="@dimen/padding_small2"
+            android:gravity="bottom|center"
+            android:paddingEnd="@dimen/padding_small2">
+
+            <ImageView
+                android:id="@+id/single_tick_imgview10011"
+                android:layout_width="13dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_singlecheck"
+                android:backgroundTint="@color/grey_40"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/double_tick_imgview10011"
+                android:layout_width="@dimen/margin_small15"
+                android:layout_height="@dimen/margin_normal20"
+                android:background="@drawable/ic_doublecheck"
+                android:backgroundTint="@color/grey_40"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

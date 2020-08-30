@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.quriosity.quriosity"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    implementation "androidx.core:core-ktx:1.3.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+
+
+
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+
+    implementation 'com.github.pchmn:MaterialChipsInput:1.0.8'// material chip
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.google.firebase:firebase-firestore:21.5.0'// Firebase Firestore database
+    implementation 'com.firebaseui:firebase-ui-firestore:6.2.0'// FirebaseUI for Cloud Firestore
+
+    //pagination paging library
+//    implementation "androidx.paging:paging-runtime:2.1.2"
+    // circle image view library
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    //EventBus enables central communication to decoupled classes with just a few lines of code
+//    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //GIFs, Stickers and emojis library
+    implementation 'com.gsconrad:richcontentedittext:1.0.0'
+
+    //Android Permissions library
+    implementation 'com.karumi:dexter:6.1.0'
+    //imagePickerLibrary
+    implementation 'com.github.yalantis:ucrop:2.2.5'
+
+    //image zoomable and dissimisable both in one library like whatsapp
+    implementation 'com.github.stfalcon:stfalcon-imageviewer:1.0.1'
+
+    // Add the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+
+    // Add the SDK for Firebase Cloud Messaging
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
+
+    //customized notification library
+    implementation 'com.tapadoo.android:alerter:6.1.0'
+
+    //WorkRequest
+    implementation 'android.arch.work:work-runtime:1.0.1'
+
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:gravity="start">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actor_me_mime_radius">
+
+        <ImageView
+            android:id="@+id/actor_other_imageview10022"
+            android:layout_width="@dimen/margin_large200"
+            android:layout_height="@dimen/margin_large200"
+            android:layout_marginEnd="1dp"
+            android:paddingStart="@dimen/margin_small3"
+            android:paddingTop="@dimen/margin_small3"
+            android:paddingEnd="@dimen/margin_small3"
+            android:paddingBottom="@dimen/margin_small3" />
+
+        <TextView
+            android:id="@+id/time_textview10022"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actor_other_imageview10022"
+            android:layout_alignEnd="@+id/actor_other_imageview10022"
+            android:gravity="bottom|center"
+            android:paddingStart="@dimen/margin_small1"
+            android:paddingEnd="@dimen/margin_small5"
+            android:paddingBottom="@dimen/margin_small3"
+            android:shadowDx="3"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:textColor="@color/grey_60"
+            android:textSize="11sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

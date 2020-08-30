@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "187762399509",
+    "firebase_url": "https://quriosity-app.firebaseio.com",
+    "project_id": "quriosity-app",
+    "storage_bucket": "quriosity-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187762399509:android:d2cd8bdcc573582718f11c",
+        "android_client_info": {
+          "package_name": "com.quriosity.quriosity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187762399509-mih6q0mbh6mf0oubsjber2tuam8rhjk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDynGCKxPKOuwq2pXaSPf1o2XBfwfpxjqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187762399509-mih6q0mbh6mf0oubsjber2tuam8rhjk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
