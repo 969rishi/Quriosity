@@ -68,7 +68,7 @@
                     android:id="@+id/checkbox_create_group"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:padding="@dimen/margin_normal10"
+                    android:padding="@dimen/margin_small10"
                     android:layout_weight="0.2"
                     android:selectAllOnFocus="true" />
 
@@ -79,7 +79,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:layout_marginTop="@dimen/margin_normal10"
+        android:layout_marginTop="@dimen/margin_small10"
         android:background="@color/gray" />
 
 </LinearLayout>

@@ -34,7 +34,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_weight="1"
                 android:autoLink="web"
-                android:paddingStart="@dimen/margin_normal10"
+                android:paddingStart="@dimen/margin_small10"
                 android:paddingTop="@dimen/margin_small3"
                 android:paddingEnd="@dimen/margin_small1"
                 android:paddingBottom="@dimen/padding_small8"

@@ -8,8 +8,8 @@
         android:color="@color/colorAccent" />
 
     <corners
-        android:bottomLeftRadius="@dimen/margin_normal10"
-        android:topLeftRadius="@dimen/margin_normal10"
+        android:bottomLeftRadius="@dimen/margin_small10"
+        android:topLeftRadius="@dimen/margin_small10"
         android:topRightRadius="@dimen/margin_small15" />
 
 </shape>

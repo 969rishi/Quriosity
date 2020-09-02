@@ -42,10 +42,10 @@
                         android:layout_weight="0.78"
                         android:background="@null"
                         android:drawableStart="@drawable/ic_search_edit_icon"
-                        android:drawablePadding="@dimen/margin_normal10"
+                        android:drawablePadding="@dimen/margin_small10"
                         android:focusable="false"
                         android:inputType="none"
-                        android:paddingStart="@dimen/margin_normal10"
+                        android:paddingStart="@dimen/padding_small10"
                         android:text="Search Trips, Destination, Activities"
                         android:textColor="@color/grey_40"
                         android:textSize="@dimen/text_size13" />
@@ -60,7 +60,7 @@
                         android:drawableStart="@drawable/ic_location_black"
                         android:gravity="center"
                         android:text="near me"
-                        android:layout_marginEnd="@dimen/margin_normal10"
+                        android:layout_marginEnd="@dimen/margin_small10"
                         android:textAllCaps="false"
                         android:textColor="@color/blue_link"
                         android:textColorHighlight="@color/dark_gray" />

@@ -69,7 +69,7 @@ public class SignupActivity extends BaseActivity {
         countrycodeedittext = findViewById(R.id.countrycodeedittext);
         fullName = findViewById(R.id.userfirstname_signup_activity);
         userEmail = findViewById(R.id.email_signup_activity);
-        userMobile = findViewById(R.id.input_co_nt_ac_t_n_o);
+        userMobile = findViewById(R.id.input_contact_no);
         userPassword1 = findViewById(R.id.user_password_activity_layout);
         userPassword2 = findViewById(R.id.user_confirm_password_activity_layout);
 

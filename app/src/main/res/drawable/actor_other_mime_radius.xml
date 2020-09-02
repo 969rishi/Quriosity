@@ -7,8 +7,8 @@
 
     <corners
         android:bottomLeftRadius="@dimen/margin_small15"
-        android:bottomRightRadius="@dimen/margin_normal10"
-        android:topRightRadius="@dimen/margin_normal10"
+        android:bottomRightRadius="@dimen/margin_small10"
+        android:topRightRadius="@dimen/margin_small10"
 
         />
 

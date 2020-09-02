@@ -48,7 +48,6 @@ import static com.quriosity.quriosity.utils.FirebaseUtil.SIGNUP_METHOD_FIRESTORE
 import static com.quriosity.quriosity.utils.FirebaseUtil.USERNAME_FIRESTORE;
 import static com.quriosity.quriosity.utils.FirebaseUtil.USERS_LAST_LOGIN;
 import static com.quriosity.quriosity.utils.FirebaseUtil.USERS_REGISTRATION_TOKEN_FIELD;
-import static com.quriosity.quriosity.utils.FirebaseUtil.USERTYPE_FIRESTORE;
 import static com.quriosity.quriosity.utils.MyUtil.isValidMobile;
 import static com.quriosity.quriosity.utils.MyUtil.validateEml;
 
@@ -71,7 +70,7 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_activity_layout);
+        setContentView(R.layout.activity_login_layout);
         toolbar = findViewById(R.id.toolbar_login_activity_layout);
         emailEditText = findViewById(R.id.emaillEditTxt_login);
         passwordEditText = findViewById(R.id.password_loginEdittext);

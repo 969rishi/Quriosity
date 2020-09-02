@@ -20,4 +20,5 @@
         android:textSize="@dimen/text_size30"
         android:textStyle="bold"
         android:visibility="visible" />
+
 </androidx.appcompat.widget.Toolbar>

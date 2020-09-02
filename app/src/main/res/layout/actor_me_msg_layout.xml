@@ -17,7 +17,7 @@
             android:layout_marginEnd="1dp"
             android:autoLink="web"
             android:layout_weight="1"
-            android:paddingStart="@dimen/margin_normal10"
+            android:paddingStart="@dimen/margin_small10"
             android:paddingTop="@dimen/padding_small8"
             android:paddingEnd="@dimen/margin_small1"
             android:paddingBottom="@dimen/padding_small8"
@@ -57,7 +57,7 @@
             <ImageView
                 android:id="@+id/double_tick_imgview"
                 android:layout_width="@dimen/margin_small15"
-                android:layout_height="@dimen/margin_normal20"
+                android:layout_height="@dimen/margin_small20"
                 android:background="@drawable/ic_doublecheck"
                 android:backgroundTint="@color/grey_40"
                 android:visibility="gone" />

@@ -9,14 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/margin_normal10">
+        android:padding="@dimen/margin_small10">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_small5"
             android:background="@color/colorAccent"
-            android:padding="@dimen/margin_normal10"
+            android:padding="@dimen/margin_small10"
             android:text="Set your group name here"
             android:textColor="@color/white"
             android:textSize="17sp"
@@ -45,18 +45,18 @@
             android:id="@+id/cancel_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_normal10"
+            android:layout_margin="@dimen/margin_small10"
             android:layout_marginTop="@dimen/margin_small15"
-            android:padding="@dimen/margin_normal10"
+            android:padding="@dimen/margin_small10"
             android:text="Cancel" />
 
         <Button
             android:id="@+id/ok_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_normal10"
+            android:layout_margin="@dimen/margin_small10"
             android:layout_marginTop="@dimen/margin_small15"
-            android:padding="@dimen/margin_normal10"
+            android:padding="@dimen/margin_small10"
             android:text="Proceed" />
 
 

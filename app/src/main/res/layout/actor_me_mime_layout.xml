@@ -58,7 +58,7 @@
             <ImageView
                 android:id="@+id/double_tick_imgview10011"
                 android:layout_width="@dimen/margin_small15"
-                android:layout_height="@dimen/margin_normal20"
+                android:layout_height="@dimen/margin_small20"
                 android:background="@drawable/ic_doublecheck"
                 android:backgroundTint="@color/grey_40"
                 android:visibility="gone" />

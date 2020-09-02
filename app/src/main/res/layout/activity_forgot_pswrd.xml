@@ -44,159 +44,180 @@
         android:visibility="gone" />
 
 
-    <LinearLayout
-        android:id="@+id/main_linearlayout_forget_activity"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/view_loginactivitylayout"
-        android:gravity="center_vertical"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.6">
-
-            <ImageView
-                android:id="@+id/imageviewForgotPaswdActivity"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:layout_centerInParent="true"
-                android:layout_gravity="center"
-                android:src="@drawable/password_forget_lock" />
-        </RelativeLayout>
+        android:layout_below="@id/toolbar_login_activity_layout"
+        android:background="@color/white">
 
         <LinearLayout
-            android:id="@+id/ask_for_id_layout"
+            android:id="@+id/main_linearlayout_forget_activity"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="@dimen/margin_normal10"
-            android:layout_marginEnd="@dimen/margin_normal10"
-            android:layout_weight="0.8"
-            android:orientation="vertical"
-            android:visibility="visible">
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_normal30"
-                android:paddingStart="@dimen/padding_small10"
-                android:text="Forgot Your Password?"
-                android:textColor="@color/grey_80"
-                android:textSize="26sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_normal30"
-                android:paddingStart="@dimen/padding_small10"
-                android:text="Enter your email address and we'll send you a link to reset your password."
-                android:textColor="@color/grey_60"
-                android:textSize="@dimen/text_size18"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:id="@+id/any_user_id_forgot_layout"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_small15"
-                android:hint="Email/ Mobile/ Username"
-                android:inputType="textEmailAddress"
-                android:padding="@dimen/padding_small20"
-                android:paddingBottom="@dimen/padding_small20"
-                android:textSize="@dimen/text_size18" />
-        </LinearLayout>
+                android:layout_height="0dp"
+                android:layout_weight="0.6">
 
-        <LinearLayout
-            android:id="@+id/mail_sent_activity"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginStart="@dimen/margin_normal10"
-            android:layout_marginEnd="@dimen/margin_normal10"
-            android:layout_weight="0.8"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/margin_small20"
-                android:layout_marginBottom="@dimen/margin_small15"
-                android:paddingStart="@dimen/padding_small10"
-                android:text="Email Sent! Check Inbox"
-                android:textColor="@color/black"
-                android:textSize="@dimen/text_size22"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/fogot_mail_sent_textview"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/margin_small20"
-                android:paddingStart="@dimen/padding_small10"
-                android:text="@string/foget_mail_snt_msg2"
-                android:textColor="@color/grey_60"
-                android:textSize="@dimen/text_size20"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/takeme_loginactivity_frgtpswd"
-                style="@style/ButtonStyleFull"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_normal30"
-                android:text="Try login again"
-                android:textAllCaps="false" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ask_for_id_button_layout"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.3"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:visibility="visible">
-
-            <Button
-                android:id="@+id/forgot_btn_loginactivity"
-                style="@style/ButtonStyleFull"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
-                android:textAllCaps="false" />
+                <ImageView
+                    android:id="@+id/imageviewForgotPaswdActivity"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/password_forget_lock" />
+            </RelativeLayout>
 
             <LinearLayout
+                android:id="@+id/ask_for_id_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="@dimen/margin_normal20"
-                android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_margin="@dimen/margin_small10"
+                android:orientation="vertical"
+                android:visibility="visible">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="@dimen/margin_small5"
-                    android:gravity="center"
-                    android:text="Don't have an account?"
-                    android:textColor="@color/dark_gray"
-                    android:textSize="@dimen/text_size14" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small15"
+                    android:padding="@dimen/padding_small10"
+                    android:text="Forgot Your Password?"
+                    android:textColor="@color/grey_80"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/dont_have_account_txtview"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="Create account"
-                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small15"
+                    android:padding="@dimen/padding_small10"
+                    android:text="Enter your email address and we'll send you a link to reset your password."
+                    android:textColor="@color/grey_60"
+                    android:textSize="@dimen/text_size18"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/any_user_id_forgot_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email/ Mobile/ Username"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="@dimen/margin_small10"
+                    android:padding="@dimen/margin_small10"
+                    android:background="@drawable/shapetext"
+                    android:textColorHint="@color/black"
                     android:textSize="@dimen/text_size18" />
+
             </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mail_sent_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small10"
+                android:layout_marginEnd="@dimen/margin_small10"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_small20"
+                    android:layout_marginBottom="@dimen/margin_small15"
+                    android:paddingStart="@dimen/padding_small10"
+                    android:text="Email Sent! Check Inbox"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size22"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/fogot_mail_sent_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_small20"
+                    android:paddingStart="@dimen/padding_small10"
+                    android:text="@string/foget_mail_snt_msg2"
+                    android:textColor="@color/grey_60"
+                    android:textSize="@dimen/text_size20"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/takeme_loginactivity_frgtpswd"
+                    style="@style/ButtonStyleFull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal30"
+                    android:text="Try login again"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ask_for_id_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/forgot_btn_loginactivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        android:background="@drawable/save3"
+                        android:paddingStart="@dimen/margin_normal30"
+                        android:paddingEnd="@dimen/margin_normal30"
+                        android:textSize="@dimen/text_size18"
+                        android:layout_margin="@dimen/margin_small10"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_small20"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_small5"
+                        android:gravity="center"
+                        android:text="Don't have an account?"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="@dimen/text_size14" />
+
+                    <TextView
+                        android:id="@+id/dont_have_account_txtview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Create account"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size18" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
 </RelativeLayout>
