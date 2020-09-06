@@ -16,6 +16,24 @@
         <item name="android:background">@color/colorPrimary</item>
     </style>
 
+  <style name="ButtonStyleNormal" parent="@android:style/TextAppearance.Widget.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <!--<item name="android:typeface">Montserrat</item>-->
+        <item name="android:paddingStart">@dimen/margin_normal30</item>
+        <item name="android:paddingEnd">@dimen/margin_normal30</item>
+        <item name="android:padding">@dimen/margin_small10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/save3</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size16</item>
+
+
+    </style>
+
+
+
 
     <style name="ButtonStyleFullRed_Curved" parent="@android:style/TextAppearance.Widget.Button">
         <item name="android:layout_height">wrap_content</item>

@@ -50,6 +50,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
+        <activity android:name=".login.ForgotPswrdActivity"/>
         <activity android:name=".utils.ImagePickerActivity" />
         <activity android:name=".activity.firechat.ImagePickerActivity" />
         <activity

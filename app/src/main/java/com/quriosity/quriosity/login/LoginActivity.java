@@ -71,6 +71,7 @@ public class LoginActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_layout);
+
         toolbar = findViewById(R.id.toolbar_login_activity_layout);
         emailEditText = findViewById(R.id.emaillEditTxt_login);
         passwordEditText = findViewById(R.id.password_loginEdittext);
@@ -80,7 +81,7 @@ public class LoginActivity extends BaseActivity {
         progressBar = findViewById(R.id.progress_bar_login_activity);
         eyeImageView = findViewById(R.id.password_visibility_eye_login);
         mainLayout = findViewById(R.id.main_linearlayout_login_activity);
-        checkBox = findViewById(R.id.rememberme_checkbox_loginactivity);
+        checkBox = findViewById(R.id.remember_me_checkbox_loginactivity);
         mDatabase = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
         hideProgress();
@@ -147,7 +148,6 @@ public class LoginActivity extends BaseActivity {
                 checkUserName(emailEditText.getText().toString().trim(), passwordEditText.getText().toString().trim());
             }
         });
-
 
         signupTextview.setOnClickListener(new View.OnClickListener() {
             @Override

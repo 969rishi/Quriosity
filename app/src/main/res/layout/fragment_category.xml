@@ -4,31 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ProgressBar
-            android:id="@+id/progress_bar"
+            android:id="@+id/progress_bar_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:visibility="gone" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floating_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="@dimen/margin_small20"
-            android:src="@drawable/ic_add" />
 
         <LinearLayout
-            android:id="@+id/no_data_found_layout"
+            android:id="@+id/no_data_found_layout_category"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin_small5"
@@ -36,24 +26,17 @@
             android:orientation="vertical"
             android:visibility="visible">
 
-            <ImageView
-                android:id="@+id/imageView_chats"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_info" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Sorry No chat history found." />
-
+                android:textSize="@dimen/text_size20"
+                android:text="No exisiting category." />
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/wholedata_home_fragment_layout"
+            android:id="@+id/wholedata_category_fragment_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin_small5"
@@ -61,7 +44,7 @@
             android:visibility="gone">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_destination_home_fragment_layout"
+                android:id="@+id/recycler_destination_home_fragment_layout_category"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="@dimen/margin_small5"

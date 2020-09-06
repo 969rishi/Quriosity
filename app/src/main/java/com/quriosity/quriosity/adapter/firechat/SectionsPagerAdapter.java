@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.quriosity.quriosity.R;
+import com.quriosity.quriosity.fragments.firechat.CategoryFrag;
 import com.quriosity.quriosity.fragments.firechat.ChatsFrag;
 import com.quriosity.quriosity.fragments.firechat.ContactsFrag;
 import com.quriosity.quriosity.fragments.firechat.GroupsFrag;
@@ -20,7 +21,7 @@ import com.quriosity.quriosity.fragments.firechat.GroupsFrag;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2, R.string.tab_text_3,R.string.add};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -41,6 +42,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 fragment = new ContactsFrag();
                 break;
+            /*case 3:
+                fragment = new CategoryFrag();
+                break;*/
         }
         return fragment;
     }

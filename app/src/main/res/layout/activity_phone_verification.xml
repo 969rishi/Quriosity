@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_signup_activity_layout"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_small2"
+        android:background="@color/gray" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/whole_relativelayout_add_functions_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small20"
+                android:text="Phone Verification"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size20"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large50"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_small10">
+
+                <ImageView
+                    android:id="@+id/imageview_phone_verification"
+                    android:layout_width="@dimen/margin_large200"
+                    android:layout_height="@dimen/margin_large170"
+                    android:layout_gravity="center"
+                    android:src="@drawable/otp_img" />
+
+                <TextView
+                    android:id="@+id/textview_phone_verification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_large50"
+                    android:padding="@dimen/padding_normal20"
+                    android:text="@string/sent_otp_msg"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size18" />
+
+                <EditText
+                    android:id="@+id/otp_verification_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:hint="Enter 6 digit Code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_phone_verification_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/margin_small20"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_phoneverification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/bottom_otp_counter_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/verify_linearLayout_button"
+                    android:layout_marginBottom="@dimen/margin_small20"
+                    android:gravity="bottom|center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/timer_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="00:00"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/text_size18" />
+
+
+                    <LinearLayout
+                        android:id="@+id/eOtplayoutid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/eOTP_error_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Haven't received sms?"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/send_eotp_again"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_small5"
+                            android:padding="@dimen/padding_small2"
+                            android:text="Re-Send"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                            android:textColor="@color/light_gray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/verify_linearLayout_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small3"
+                    android:gravity="bottom|center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/submit_otp_code_button"
+                        style="@style/ButtonStyleNormal"
+                        android:text="Verify" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

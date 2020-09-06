@@ -15,13 +15,18 @@
         android:id="@+id/navigation_explore"
         android:icon="@drawable/ic_search_edit_icon"
         android:title="Explore" />
-
+<!--
     <item
         android:id="@+id/navigation_favourites"
         android:icon="@drawable/ic_heart_outline"
-        android:title="Favourites" />
+        android:title="Favourites" />-->
     <item
         android:id="@+id/navigation_recommendations"
         android:icon="@drawable/ic_like_outline"
+        android:title="Recommendations" />
+
+    <item
+        android:id="@+id/navigation_category"
+        android:icon="@drawable/ic_heart_outline"
         android:title="Recommendations" />
 </menu>

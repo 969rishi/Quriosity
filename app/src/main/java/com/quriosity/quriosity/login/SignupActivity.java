@@ -48,7 +48,7 @@ public class SignupActivity extends BaseActivity {
     private LinearLayout relativeLayoutData;
     private Button submitBtton;
     private EditText fullName, userEmail, userMobile, userPassword1, userPassword2;
-    private TextView phoneCodeEditSignup;
+    private TextView signInBtn,phoneCodeEditSignup;
     private Spinner countrycodeedittext;
     private ArrayList<String> codeArrayList;
     private ArrayList<String> countryArrayList;
@@ -60,11 +60,12 @@ public class SignupActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         toolbar = findViewById(R.id.toolbar_signup_activity_layout);
-        initToolbar();
+     //   initToolbar();
         mDatabase = FirebaseFirestore.getInstance();
         relativeLayoutData = findViewById(R.id.whole_relativelayout_add_functions_activity);
         progressBar = findViewById(R.id.progress_bar_add_functions_layout);
         submitBtton = findViewById(R.id.submit_btn_activity_signup);
+        signInBtn = findViewById(R.id.signin_btn_activity_signup);
         phoneCodeEditSignup = findViewById(R.id.countrycodes);
         countrycodeedittext = findViewById(R.id.countrycodeedittext);
         fullName = findViewById(R.id.userfirstname_signup_activity);
@@ -99,18 +100,16 @@ public class SignupActivity extends BaseActivity {
             }
         });
 
-        phoneCodeEditSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                countrycodeedittext.performClick();
-            }
-        });
-        submitBtton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                submitBttonMethod();
-            }
-        });
+        phoneCodeEditSignup.setOnClickListener(v -> countrycodeedittext.performClick());
+        submitBtton.setOnClickListener(v -> submitBttonMethod());
+        signInBtn.setOnClickListener(v -> signInPage());
+    }
+
+    private void signInPage() {
+        //  Open Login Activity if account already exists
+
+        Intent intent = new Intent(SignupActivity.this,LoginActivity.class);
+        startActivity(intent);
     }
 
     private void submitBttonMethod() {

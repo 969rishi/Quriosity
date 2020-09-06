@@ -52,6 +52,8 @@
     <string name="savedraft">Save Draft</string>
     <string name="previous">Previous</string>
     <string name="signup_terms">By clicking <b>Submit </b> you agree to our <b>Terms and Conditions</b></string>
+    <string name="already_have_an_ac">Already have an account?</string>
+    <string name="create_user">Don\'t have an account yet?</string>
     <string name="sent_otp_msg">We have sent an otp code to your mobile number. Please wait while we are fetching otp.</string>
     <string name="phone_verified_msg">Your mobile verification process completed. Please wait while we setup your account.</string>
     <string name="enter_otp_msg">Please enter 6 digit verification code sent to your phone.</string>

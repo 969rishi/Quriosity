@@ -73,12 +73,12 @@ public class VerificationActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.phone_verification_layout);
+        setContentView(R.layout.activity_phone_verification);
         toolbar = findViewById(R.id.toolbar_signup_activity_layout);
         relativeLayoutData = findViewById(R.id.whole_relativelayout_add_functions_activity);
         verify_linearLayout_button = findViewById(R.id.verify_linearLayout_button);
         buttonManualOtp = findViewById(R.id.submit_otp_code_button);
-        editTextOtp = findViewById(R.id.input_otp_code_phone_verification);
+        editTextOtp = findViewById(R.id.otp_verification_number);
         progressBar = findViewById(R.id.progress_phone_verification_layout);
         imageView = findViewById(R.id.imageview_phone_verification);
         statusTextview = findViewById(R.id.textview_phone_verification);

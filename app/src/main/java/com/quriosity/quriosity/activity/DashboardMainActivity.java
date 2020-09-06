@@ -30,6 +30,7 @@ import com.quriosity.quriosity.R;
 import com.quriosity.quriosity.activity.firechat.ChatDashActivity;
 import com.quriosity.quriosity.fragments.explore.ExploreFragment;
 import com.quriosity.quriosity.fragments.favourite.FavouritesFragment;
+import com.quriosity.quriosity.fragments.firechat.CategoryFrag;
 import com.quriosity.quriosity.fragments.home.HomeFragment;
 import com.quriosity.quriosity.fragments.inbox.InboxFragment;
 import com.quriosity.quriosity.fragments.recommendation.RecommendationFragment;
@@ -85,7 +86,7 @@ public class DashboardMainActivity extends AppCompatActivity implements HomeFrag
                     //setActionBarText(getString(R.string.explore).toLowerCase());
                 }
                 break;
-                case R.id.navigation_favourites: {
+         /*       case R.id.navigation_favourites: {
 //                    if (!MyUtil.isUserLoggedIn(DashboardMainActivity.this)) {
 //                        MyUtil.showLoginDialog(DashboardMainActivity.this);
 //                    } else {
@@ -95,7 +96,9 @@ public class DashboardMainActivity extends AppCompatActivity implements HomeFrag
                     fragment = new FavouritesFragment();
                 }
                 break;
-                case R.id.navigation_recommendations: {
+          */
+
+         case R.id.navigation_recommendations: {
 //                    if (!MyUtil.isUserLoggedIn(DashboardMainActivity.this)) {
 //                        MyUtil.showLoginDialog(DashboardMainActivity.this);
 //                    } else {
@@ -105,6 +108,11 @@ public class DashboardMainActivity extends AppCompatActivity implements HomeFrag
                     fragment = new RecommendationFragment();
                 }
                 break;
+                case R.id.navigation_category: {
+                    fragment = new CategoryFrag();
+                }
+                break;
+
             }
             if (fragment != null) {
                 getSupportFragmentManager()
